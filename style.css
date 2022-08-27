@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background: linear-gradient(245deg, #b6c1fd, #a7f0d7, #f3b0b0);
+}
+
+.wrapper {
+    max-width: 700px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1.5rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.content {
+    overflow: hidden;
+    background: none;
+    border-radius: .5rem;
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content .cell {
+    width: 120px;
+    height: 120px;
+    font-size: 5rem;
+    font-weight: 700;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content .cell::selection {
+    background: none;
+}
+
+.control {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control .status {
+    font-weight: 400;
+}
+
+.control .restart {
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    background-color: rgb(212, 4, 4);
+    color: #fff;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.control .restart:hover {
+    background-color: rgb(231, 49, 49);
+}
