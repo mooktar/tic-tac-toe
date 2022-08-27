@@ -2,7 +2,7 @@
 
 ## Demo
 
-![tic-tac-toe](.\screenshot.png)
+![tic-tac-toe](./screenshot.png)
 
 ## Stack
 
